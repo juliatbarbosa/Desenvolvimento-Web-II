@@ -2,33 +2,45 @@
 
 function calcular() {
     var produto = document.getElementById('produto')
+    var prodSelected = produto.options[produto.selectedIndex].text;
     var quant = document.getElementById('quant')
     var dinheiro = document.getElementById('dinheiro');
-    var cartao = document.getElementById('cartao');
     var entrega = document.getElementById('entrega');
-    var coca = document.getElementById('coca')
-    var coxinha = document.getElementById('coxinha')
-    var pao = document.getElementById('pao')
     var resp1 = document.getElementById('resp1');
+    var precoProduto = 0
+    var precoDesc = 0
+    var precoEntrega = 0
 //<p>Total a pagar:</p>
     
-    if (produto.options[produto.selectedIndex].text == 'Coca-cola Lata') {
-        coca.value = 3.5
+    if (prodSelected == 'Coca-cola Lata') {
+        precoProduto = 3.5
     } 
-    else if (produto.options[produto.selectedIndex].text == 'Coxinha') {
-        coxinha.value = 4
+    else if (prodSelected == 'Coxinha') {
+        precoProduto = 4
     }
-    else if (produto.options[produto.selectedIndex].text == 'Pão de queijo'){
-        pao.value = 3
+    else if (prodSelected == 'Pão de Queijo'){
+        precoProduto= 3
     }
-    dinheiro.value = 0.1
-    entrega.value = 6
 
-    var total = 
+    if (dinheiro.checked == true) {
+        precoDesc = 0.1
+    }
+    else {
+        precoDesc = 0
+    }
 
-    console.log(coca.value)
-    console.log(pao.value)
-    console.log(coxinha.value)
+    if (entrega.checked == true) {
+        precoEntrega = 6
+    } else {
+        precoEntrega = 0
+    }
+
+    var total = parseFloat(precoProduto) * parseFloat(quant.value)
+
+    var totalDesc = (total - (total*precoDesc)) + precoEntrega
+
+    resp1.innerHTML = '<p>Total a pagar: R$ ' + totalDesc.toFixed(2) +'</p>' 
+    console.log(total)
 
     
 
