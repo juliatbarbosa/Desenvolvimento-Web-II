@@ -5,11 +5,11 @@ function CalcularCombustivel() {
 
     if (etanol.value == '' && gasolina.value == '') {
         resp.innerHTML = 'Preencha os campos!'
-    } else if (etanol.value >= (gasolina.value * 0.7)) {
-        resp.innerHTML = 'Está compensado abastecer com etanol!'
+    } else if (etanol.value <= (gasolina.value * 0.7)) {
+        resp.innerHTML = 'Está compensando abastecer com etanol!'
 
     } else {
-        resp.innerHTML = 'Está compensado abastecer com gasolina!'
+        resp.innerHTML = 'Está compensando abastecer com gasolina!'
     }
 }
 

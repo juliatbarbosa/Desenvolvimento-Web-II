@@ -8,19 +8,19 @@ function visualizar() {
             resp.innerHTML = 'Domingo'
             break
         case 1:
-            resp.innerHTML = 'Segunda'
+            resp.innerHTML = 'Segunda-feira'
             break
         case 2:
-            resp.innerHTML = 'Terça'
+            resp.innerHTML = 'Terça-feira'
             break
         case 3:
-            resp.innerHTML = 'Quarta'
+            resp.innerHTML = 'Quarta-feira'
             break
         case 4:
-            resp.innerHTML = 'Quinta'
+            resp.innerHTML = 'Quinta-feira'
             break
         case 5:
-            resp.innerHTML = 'Sexta'
+            resp.innerHTML = 'Sexta-feira'
             break
         case 6:
             resp.innerHTML = 'Sábado'
