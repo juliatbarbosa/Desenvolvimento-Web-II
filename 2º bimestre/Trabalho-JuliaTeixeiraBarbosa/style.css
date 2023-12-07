@@ -1,0 +1,144 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+    font-family: "montesserrat";
+    background-color: #f2f2f2;
+}
+
+@font-face {
+    font-family: "montesserrat";
+    src: url("Montserrat-Regular.ttf");
+}
+
+.titulo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.icon {
+    width: 60px;
+}
+
+.cardFormulario {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px 0px rgb(0 0 0 / 15%);
+    margin-top: 20px;
+}
+
+.linhaFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    width: 50%;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+
+.labelNome {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+
+.inputText {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    height: 25px;
+    border-radius: 6px;
+    border: 1px solid black;
+    font-family: "montesserrat";
+}
+
+.linhaBotoes {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+
+input[type="button"] {
+    width: 120px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 2px 0px !important;
+    text-align: center;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: "montesserrat";
+    font-weight: bold;
+    border-radius: 8px;
+    height: 25px;
+    font-size: 13px;
+}
+
+input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    table-layout: fixed; 
+    box-shadow: 0 2px 6px 0px rgb(0 0 0 / 15%);
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    max-width: 15ch;
+    font-size: 13px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td {
+    background-color: white;
+}
+
+
+.imgClose {
+    width: 12px;
+    cursor: pointer;
+}
+
+.colunaIcone {
+    width: 4ch;
+}
+
+.colunaNumero {
+    width: 15ch;
+}
+

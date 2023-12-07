@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Equipamentos Eletrônicos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icon.png">
+</head>
+
+<body>
+    <div class="titulo">
+        <img class="icon" src="img/icon.png" alt="">
+        <h1>EQUIPAMENTOS ELETRÔNICOS</h1>
+    </div>
+    <div class="cardFormulario">
+        <label class="labelNome">
+            Nome
+            <input class="inputText" type="text" id="nome" />
+        </label>
+        <div class="linhaFlex">
+            <label>
+                Número de série
+                <input class="inputText" type="text" id="numeroSerie" />
+            </label>
+            <label style="margin-left: 10px;">
+                Valor
+                <input class="inputText" type="text" id="valor" />
+            </label>
+        </div>
+        <div class="linhaFlex">
+            <label>
+                Fornecedor
+                <input class="inputText" type="text" id="fornecedor" />
+            </label>
+            <label style="margin-left: 10px;">
+                Garantia (meses)
+                <input class="inputText" type="text" id="garantia" />
+            </label>
+        </div>
+        <div class="linhaBotoes">
+            <input type="button" onclick="inserir()" value="INSERIR" />
+            <input type="button" onclick="listar()" value="LISTAR" />
+            <input type="button" onclick="salvar()" value="SALVAR" />
+        </div>
+    </div>
+    <table border="1" width="100%" id="tabela"></table>
+    <script src="script.js"></script>
+</body>
+
+</html>
